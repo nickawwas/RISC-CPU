@@ -1,0 +1,38 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:02:38 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Wed Oct  6 13:41:16 2021
+# Process ID: 12332
+# Current directory: /nfs/home/n/n_kawwas/COEN316/lab1
+# Command line: vivado -log alu.log -mode batch -source alu.tcl
+# Log file: /nfs/home/n/n_kawwas/COEN316/lab1/alu.log
+# Journal file: /nfs/home/n/n_kawwas/COEN316/lab1/vivado.jou
+#-----------------------------------------------------------
+source alu.tcl
+# read_vhdl alu.vhd
+# read_xdc alu.xdc
+# synth_design -top alu -part xc7a100tcsg324-1
+Command: synth_design -top alu -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 12350 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:04 . Memory (MB): peak = 1467.582 ; gain = 86.727 ; free physical = 69995 ; free virtual = 154301
+---------------------------------------------------------------------------------
+ERROR: [Synth 8-2715] syntax error near = [/nfs/home/n/n_kawwas/COEN316/lab1/alu.vhd:100]
+ERROR: [Synth 8-2715] syntax error near = [/nfs/home/n/n_kawwas/COEN316/lab1/alu.vhd:102]
+ERROR: [Synth 8-2715] syntax error near = [/nfs/home/n/n_kawwas/COEN316/lab1/alu.vhd:110]
+ERROR: [Synth 8-2715] syntax error near = [/nfs/home/n/n_kawwas/COEN316/lab1/alu.vhd:112]
+INFO: [Synth 8-2810] unit alu_arch ignored due to previous errors [/nfs/home/n/n_kawwas/COEN316/lab1/alu.vhd:19]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 1511.207 ; gain = 130.352 ; free physical = 70008 ; free virtual = 154314
+---------------------------------------------------------------------------------
+RTL Elaboration failed
+INFO: [Common 17-83] Releasing license: Synthesis
+3 Infos, 0 Warnings, 0 Critical Warnings and 5 Errors encountered.
+synth_design failed
+ERROR: [Common 17-69] Command failed: Synthesis failed - please see the console or run log file for details
+INFO: [Common 17-206] Exiting Vivado at Wed Oct  6 13:41:33 2021...

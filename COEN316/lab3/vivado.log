@@ -1,0 +1,33 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:02:38 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Tue Nov  2 16:33:18 2021
+# Process ID: 5727
+# Current directory: /nfs/home/n/n_kawwas/COEN316/lab3
+# Command line: vivado
+# Log file: /nfs/home/n/n_kawwas/COEN316/lab3/vivado.log
+# Journal file: /nfs/home/n/n_kawwas/COEN316/lab3/vivado.jou
+#-----------------------------------------------------------
+start_gui
+create_project next_address_project /nfs/home/n/n_kawwas/COEN316/lab3/next_address_project -part xc7a100tcsg324-1
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/CMC/tools/xilinx/Vivado_2018.2/Vivado/2018.2/data/ip'.
+create_project: Time (s): cpu = 00:00:08 ; elapsed = 00:00:07 . Memory (MB): peak = 6264.672 ; gain = 17.637 ; free physical = 10978 ; free virtual = 23565
+set_property target_language VHDL [current_project]
+add_files -norecurse {/nfs/home/n/n_kawwas/COEN316/lab3/next_address_board.vhd /nfs/home/n/n_kawwas/COEN316/lab3/next_address.vhd}
+add_files -fileset constrs_1 -norecurse /nfs/home/n/n_kawwas/COEN316/lab3/next_address.xdc
+update_compile_order -fileset sources_1
+launch_runs synth_1 -jobs 6
+[Tue Nov  2 16:38:04 2021] Launched synth_1...
+Run output will be captured here: /nfs/home/n/n_kawwas/COEN316/lab3/next_address_project/next_address_project.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 6
+[Tue Nov  2 16:39:17 2021] Launched impl_1...
+Run output will be captured here: /nfs/home/n/n_kawwas/COEN316/lab3/next_address_project/next_address_project.runs/impl_1/runme.log
+add_files -fileset constrs_1 -norecurse /nfs/home/n/n_kawwas/COEN316/lab3/next_address.tcl
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Tue Nov  2 16:41:14 2021] Launched impl_1...
+Run output will be captured here: /nfs/home/n/n_kawwas/COEN316/lab3/next_address_project/next_address_project.runs/impl_1/runme.log
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Nov  2 16:43:49 2021...

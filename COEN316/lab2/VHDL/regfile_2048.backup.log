@@ -1,0 +1,540 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:02:38 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Tue Oct 26 15:25:40 2021
+# Process ID: 2048
+# Current directory: /nfs/home/n/n_kawwas/COEN316/lab2/VHDL
+# Command line: vivado -log regfile.log -mode batch -source regfile.tcl
+# Log file: /nfs/home/n/n_kawwas/COEN316/lab2/VHDL/regfile.log
+# Journal file: /nfs/home/n/n_kawwas/COEN316/lab2/VHDL/vivado.jou
+#-----------------------------------------------------------
+source regfile.tcl
+# read_vhdl { ./regfile_board.vhd ./regfile_comp.vhd }
+# read_xdc ./regfile.xdc
+# synth_design -top regfile -part xc7a100tcsg324-1
+Command: synth_design -top regfile -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 2066 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 1401.082 ; gain = 85.805 ; free physical = 11694 ; free virtual = 24314
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'regfile' [/nfs/home/n/n_kawwas/COEN316/lab2/VHDL/regfile_comp.vhd:19]
+INFO: [Synth 8-256] done synthesizing module 'regfile' (1#1) [/nfs/home/n/n_kawwas/COEN316/lab2/VHDL/regfile_comp.vhd:19]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1445.723 ; gain = 130.445 ; free physical = 11704 ; free virtual = 24324
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:04 . Memory (MB): peak = 1445.723 ; gain = 130.445 ; free physical = 11705 ; free virtual = 24325
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:04 . Memory (MB): peak = 1445.723 ; gain = 130.445 ; free physical = 11705 ; free virtual = 24325
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/nfs/home/n/n_kawwas/COEN316/lab2/VHDL/regfile.xdc]
+WARNING: [Vivado 12-584] No ports matched 'd_in[0]'. [/nfs/home/n/n_kawwas/COEN316/lab2/VHDL/regfile.xdc:8]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/nfs/home/n/n_kawwas/COEN316/lab2/VHDL/regfile.xdc:8]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'd_in[1]'. [/nfs/home/n/n_kawwas/COEN316/lab2/VHDL/regfile.xdc:9]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/nfs/home/n/n_kawwas/COEN316/lab2/VHDL/regfile.xdc:9]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'd_in[2]'. [/nfs/home/n/n_kawwas/COEN316/lab2/VHDL/regfile.xdc:10]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/nfs/home/n/n_kawwas/COEN316/lab2/VHDL/regfile.xdc:10]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'd_in[3]'. [/nfs/home/n/n_kawwas/COEN316/lab2/VHDL/regfile.xdc:11]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/nfs/home/n/n_kawwas/COEN316/lab2/VHDL/regfile.xdc:11]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'read_a_in[0]'. [/nfs/home/n/n_kawwas/COEN316/lab2/VHDL/regfile.xdc:17]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/nfs/home/n/n_kawwas/COEN316/lab2/VHDL/regfile.xdc:17]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'read_a_in[1]'. [/nfs/home/n/n_kawwas/COEN316/lab2/VHDL/regfile.xdc:18]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/nfs/home/n/n_kawwas/COEN316/lab2/VHDL/regfile.xdc:18]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'read_b_in[0]'. [/nfs/home/n/n_kawwas/COEN316/lab2/VHDL/regfile.xdc:20]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/nfs/home/n/n_kawwas/COEN316/lab2/VHDL/regfile.xdc:20]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'read_b_in[1]'. [/nfs/home/n/n_kawwas/COEN316/lab2/VHDL/regfile.xdc:21]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/nfs/home/n/n_kawwas/COEN316/lab2/VHDL/regfile.xdc:21]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'write_address_in[0]'. [/nfs/home/n/n_kawwas/COEN316/lab2/VHDL/regfile.xdc:25]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/nfs/home/n/n_kawwas/COEN316/lab2/VHDL/regfile.xdc:25]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'write_address_in[1]'. [/nfs/home/n/n_kawwas/COEN316/lab2/VHDL/regfile.xdc:26]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/nfs/home/n/n_kawwas/COEN316/lab2/VHDL/regfile.xdc:26]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'out_a_out[0]'. [/nfs/home/n/n_kawwas/COEN316/lab2/VHDL/regfile.xdc:29]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/nfs/home/n/n_kawwas/COEN316/lab2/VHDL/regfile.xdc:29]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'out_a_out[1]'. [/nfs/home/n/n_kawwas/COEN316/lab2/VHDL/regfile.xdc:30]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/nfs/home/n/n_kawwas/COEN316/lab2/VHDL/regfile.xdc:30]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'out_a_out[2]'. [/nfs/home/n/n_kawwas/COEN316/lab2/VHDL/regfile.xdc:31]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/nfs/home/n/n_kawwas/COEN316/lab2/VHDL/regfile.xdc:31]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'out_a_out[3]'. [/nfs/home/n/n_kawwas/COEN316/lab2/VHDL/regfile.xdc:32]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/nfs/home/n/n_kawwas/COEN316/lab2/VHDL/regfile.xdc:32]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'out_b_out[0]'. [/nfs/home/n/n_kawwas/COEN316/lab2/VHDL/regfile.xdc:34]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/nfs/home/n/n_kawwas/COEN316/lab2/VHDL/regfile.xdc:34]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'out_b_out[1]'. [/nfs/home/n/n_kawwas/COEN316/lab2/VHDL/regfile.xdc:35]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/nfs/home/n/n_kawwas/COEN316/lab2/VHDL/regfile.xdc:35]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'out_b_out[2]'. [/nfs/home/n/n_kawwas/COEN316/lab2/VHDL/regfile.xdc:36]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/nfs/home/n/n_kawwas/COEN316/lab2/VHDL/regfile.xdc:36]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'out_b_out[3]'. [/nfs/home/n/n_kawwas/COEN316/lab2/VHDL/regfile.xdc:37]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/nfs/home/n/n_kawwas/COEN316/lab2/VHDL/regfile.xdc:37]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [/nfs/home/n/n_kawwas/COEN316/lab2/VHDL/regfile.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/nfs/home/n/n_kawwas/COEN316/lab2/VHDL/regfile.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/regfile_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/regfile_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1836.473 ; gain = 0.000 ; free physical = 11355 ; free virtual = 23975
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:09 ; elapsed = 00:00:34 . Memory (MB): peak = 1836.473 ; gain = 521.195 ; free physical = 11517 ; free virtual = 24138
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:09 ; elapsed = 00:00:34 . Memory (MB): peak = 1836.473 ; gain = 521.195 ; free physical = 11517 ; free virtual = 24138
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:09 ; elapsed = 00:00:34 . Memory (MB): peak = 1836.473 ; gain = 521.195 ; free physical = 11519 ; free virtual = 24140
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "regs_reg[0]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[1]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[2]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[3]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[4]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[5]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[6]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[7]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[8]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[9]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[10]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[11]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[12]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[13]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[14]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[15]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[16]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[17]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[18]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[19]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[20]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[21]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[22]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[23]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[24]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[25]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[26]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[27]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[28]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[29]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[30]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[31]" won't be mapped to RAM because it is too sparse
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:34 . Memory (MB): peak = 1836.473 ; gain = 521.195 ; free physical = 11510 ; free virtual = 24131
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 32    
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 32    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module regfile 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 32    
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 32    
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:10 ; elapsed = 00:00:35 . Memory (MB): peak = 1836.473 ; gain = 521.195 ; free physical = 11490 ; free virtual = 24113
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:45 . Memory (MB): peak = 1836.473 ; gain = 521.195 ; free physical = 11368 ; free virtual = 23991
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:45 . Memory (MB): peak = 1836.473 ; gain = 521.195 ; free physical = 11367 ; free virtual = 23990
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:15 ; elapsed = 00:00:45 . Memory (MB): peak = 1836.473 ; gain = 521.195 ; free physical = 11365 ; free virtual = 23987
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:16 ; elapsed = 00:00:45 . Memory (MB): peak = 1836.473 ; gain = 521.195 ; free physical = 11365 ; free virtual = 23988
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:16 ; elapsed = 00:00:45 . Memory (MB): peak = 1836.473 ; gain = 521.195 ; free physical = 11365 ; free virtual = 23988
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:16 ; elapsed = 00:00:45 . Memory (MB): peak = 1836.473 ; gain = 521.195 ; free physical = 11365 ; free virtual = 23988
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:16 ; elapsed = 00:00:45 . Memory (MB): peak = 1836.473 ; gain = 521.195 ; free physical = 11365 ; free virtual = 23988
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:16 ; elapsed = 00:00:45 . Memory (MB): peak = 1836.473 ; gain = 521.195 ; free physical = 11365 ; free virtual = 23988
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:16 ; elapsed = 00:00:45 . Memory (MB): peak = 1836.473 ; gain = 521.195 ; free physical = 11365 ; free virtual = 23988
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+------+------+
+|      |Cell  |Count |
++------+------+------+
+|1     |BUFG  |     1|
+|2     |LUT6  |   608|
+|3     |MUXF7 |   256|
+|4     |FDCE  |  1024|
+|5     |IBUF  |    50|
+|6     |OBUF  |    64|
++------+------+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       |  2003|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:16 ; elapsed = 00:00:45 . Memory (MB): peak = 1836.473 ; gain = 521.195 ; free physical = 11365 ; free virtual = 23988
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:09 ; elapsed = 00:00:18 . Memory (MB): peak = 1836.473 ; gain = 130.445 ; free physical = 11421 ; free virtual = 24044
+Synthesis Optimization Complete : Time (s): cpu = 00:00:16 ; elapsed = 00:00:45 . Memory (MB): peak = 1836.473 ; gain = 521.195 ; free physical = 11432 ; free virtual = 24055
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 306 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-101] Netlist 'regfile' is not ideal for floorplanning, since the cellview 'regfile' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [/nfs/home/n/n_kawwas/COEN316/lab2/VHDL/regfile.xdc]
+WARNING: [Vivado 12-584] No ports matched 'd_in[0]'. [/nfs/home/n/n_kawwas/COEN316/lab2/VHDL/regfile.xdc:8]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/nfs/home/n/n_kawwas/COEN316/lab2/VHDL/regfile.xdc:8]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'd_in[1]'. [/nfs/home/n/n_kawwas/COEN316/lab2/VHDL/regfile.xdc:9]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/nfs/home/n/n_kawwas/COEN316/lab2/VHDL/regfile.xdc:9]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'd_in[2]'. [/nfs/home/n/n_kawwas/COEN316/lab2/VHDL/regfile.xdc:10]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/nfs/home/n/n_kawwas/COEN316/lab2/VHDL/regfile.xdc:10]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'd_in[3]'. [/nfs/home/n/n_kawwas/COEN316/lab2/VHDL/regfile.xdc:11]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/nfs/home/n/n_kawwas/COEN316/lab2/VHDL/regfile.xdc:11]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'read_a_in[0]'. [/nfs/home/n/n_kawwas/COEN316/lab2/VHDL/regfile.xdc:17]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/nfs/home/n/n_kawwas/COEN316/lab2/VHDL/regfile.xdc:17]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'read_a_in[1]'. [/nfs/home/n/n_kawwas/COEN316/lab2/VHDL/regfile.xdc:18]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/nfs/home/n/n_kawwas/COEN316/lab2/VHDL/regfile.xdc:18]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'read_b_in[0]'. [/nfs/home/n/n_kawwas/COEN316/lab2/VHDL/regfile.xdc:20]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/nfs/home/n/n_kawwas/COEN316/lab2/VHDL/regfile.xdc:20]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'read_b_in[1]'. [/nfs/home/n/n_kawwas/COEN316/lab2/VHDL/regfile.xdc:21]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/nfs/home/n/n_kawwas/COEN316/lab2/VHDL/regfile.xdc:21]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'write_address_in[0]'. [/nfs/home/n/n_kawwas/COEN316/lab2/VHDL/regfile.xdc:25]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/nfs/home/n/n_kawwas/COEN316/lab2/VHDL/regfile.xdc:25]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'write_address_in[1]'. [/nfs/home/n/n_kawwas/COEN316/lab2/VHDL/regfile.xdc:26]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/nfs/home/n/n_kawwas/COEN316/lab2/VHDL/regfile.xdc:26]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'out_a_out[0]'. [/nfs/home/n/n_kawwas/COEN316/lab2/VHDL/regfile.xdc:29]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/nfs/home/n/n_kawwas/COEN316/lab2/VHDL/regfile.xdc:29]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'out_a_out[1]'. [/nfs/home/n/n_kawwas/COEN316/lab2/VHDL/regfile.xdc:30]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/nfs/home/n/n_kawwas/COEN316/lab2/VHDL/regfile.xdc:30]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'out_a_out[2]'. [/nfs/home/n/n_kawwas/COEN316/lab2/VHDL/regfile.xdc:31]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/nfs/home/n/n_kawwas/COEN316/lab2/VHDL/regfile.xdc:31]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'out_a_out[3]'. [/nfs/home/n/n_kawwas/COEN316/lab2/VHDL/regfile.xdc:32]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/nfs/home/n/n_kawwas/COEN316/lab2/VHDL/regfile.xdc:32]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'out_b_out[0]'. [/nfs/home/n/n_kawwas/COEN316/lab2/VHDL/regfile.xdc:34]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/nfs/home/n/n_kawwas/COEN316/lab2/VHDL/regfile.xdc:34]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'out_b_out[1]'. [/nfs/home/n/n_kawwas/COEN316/lab2/VHDL/regfile.xdc:35]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/nfs/home/n/n_kawwas/COEN316/lab2/VHDL/regfile.xdc:35]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'out_b_out[2]'. [/nfs/home/n/n_kawwas/COEN316/lab2/VHDL/regfile.xdc:36]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/nfs/home/n/n_kawwas/COEN316/lab2/VHDL/regfile.xdc:36]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'out_b_out[3]'. [/nfs/home/n/n_kawwas/COEN316/lab2/VHDL/regfile.xdc:37]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/nfs/home/n/n_kawwas/COEN316/lab2/VHDL/regfile.xdc:37]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [/nfs/home/n/n_kawwas/COEN316/lab2/VHDL/regfile.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+46 Infos, 37 Warnings, 36 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:17 ; elapsed = 00:00:46 . Memory (MB): peak = 1836.473 ; gain = 533.844 ; free physical = 11417 ; free virtual = 24040
+# opt_design
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a100t'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:00.93 ; elapsed = 00:00:02 . Memory (MB): peak = 1844.480 ; gain = 8.008 ; free physical = 11414 ; free virtual = 24036
+
+Starting Cache Timing Information Task
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Ending Cache Timing Information Task | Checksum: 1b0d05b82
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:23 . Memory (MB): peak = 2189.656 ; gain = 345.176 ; free physical = 11082 ; free virtual = 23705
+
+Starting Logic Optimization Task
+
+Phase 1 Retarget
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 1 Retarget | Checksum: 1b0d05b82
+
+Time (s): cpu = 00:00:00.08 ; elapsed = 00:00:00.06 . Memory (MB): peak = 2189.656 ; gain = 0.000 ; free physical = 11107 ; free virtual = 23730
+INFO: [Opt 31-389] Phase Retarget created 0 cells and removed 0 cells
+
+Phase 2 Constant propagation
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Phase 2 Constant propagation | Checksum: 1b0d05b82
+
+Time (s): cpu = 00:00:00.09 ; elapsed = 00:00:00.08 . Memory (MB): peak = 2189.656 ; gain = 0.000 ; free physical = 11107 ; free virtual = 23730
+INFO: [Opt 31-389] Phase Constant propagation created 0 cells and removed 0 cells
+
+Phase 3 Sweep
+Phase 3 Sweep | Checksum: 1b0d05b82
+
+Time (s): cpu = 00:00:00.11 ; elapsed = 00:00:00.09 . Memory (MB): peak = 2189.656 ; gain = 0.000 ; free physical = 11107 ; free virtual = 23730
+INFO: [Opt 31-389] Phase Sweep created 0 cells and removed 0 cells
+
+Phase 4 BUFG optimization
+Phase 4 BUFG optimization | Checksum: 1b0d05b82
+
+Time (s): cpu = 00:00:00.13 ; elapsed = 00:00:00.12 . Memory (MB): peak = 2189.656 ; gain = 0.000 ; free physical = 11107 ; free virtual = 23730
+INFO: [Opt 31-662] Phase BUFG optimization created 0 cells of which 0 are BUFGs and removed 0 cells.
+
+Phase 5 Shift Register Optimization
+Phase 5 Shift Register Optimization | Checksum: 1b0d05b82
+
+Time (s): cpu = 00:00:00.15 ; elapsed = 00:00:00.13 . Memory (MB): peak = 2189.656 ; gain = 0.000 ; free physical = 11107 ; free virtual = 23730
+INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
+
+Phase 6 Post Processing Netlist
+Phase 6 Post Processing Netlist | Checksum: 1b0d05b82
+
+Time (s): cpu = 00:00:00.15 ; elapsed = 00:00:00.13 . Memory (MB): peak = 2189.656 ; gain = 0.000 ; free physical = 11107 ; free virtual = 23730
+INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 0 cells
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2189.656 ; gain = 0.000 ; free physical = 11107 ; free virtual = 23730
+Ending Logic Optimization Task | Checksum: 1b0d05b82
+
+Time (s): cpu = 00:00:00.16 ; elapsed = 00:00:00.14 . Memory (MB): peak = 2189.656 ; gain = 0.000 ; free physical = 11107 ; free virtual = 23730
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+Ending Power Optimization Task | Checksum: 1b0d05b82
+
+Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.03 . Memory (MB): peak = 2189.660 ; gain = 0.004 ; free physical = 11107 ; free virtual = 23730
+
+Starting Final Cleanup Task
+Ending Final Cleanup Task | Checksum: 1b0d05b82
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2189.660 ; gain = 0.000 ; free physical = 11107 ; free virtual = 23730
+INFO: [Common 17-83] Releasing license: Implementation
+16 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:00:06 ; elapsed = 00:00:25 . Memory (MB): peak = 2189.660 ; gain = 353.188 ; free physical = 11107 ; free virtual = 23730
+# place_design
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a100t'
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+Starting Placer Task
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 8 CPUs
+
+Phase 1 Placer Initialization
+
+Phase 1.1 Placer Initialization Netlist Sorting
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2253.691 ; gain = 0.000 ; free physical = 11100 ; free virtual = 23722
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: 10ceafb30
+
+Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2253.691 ; gain = 0.000 ; free physical = 11100 ; free virtual = 23722
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2253.691 ; gain = 0.000 ; free physical = 11100 ; free virtual = 23722
+
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+ERROR: [Place 30-574] Poor placement for routing between an IO pin and BUFG. If this sub optimal condition is acceptable for this design, you may use the CLOCK_DEDICATED_ROUTE constraint in the .xdc file to demote this message to a WARNING. However, the use of this override is highly discouraged. These examples can be used directly in the .xdc file to override this clock rule.
+	< set_property CLOCK_DEDICATED_ROUTE FALSE [get_nets clk_IBUF] >
+
+	clk_IBUF_inst (IBUF.O) is locked to IOB_X0Y85
+	clk_IBUF_BUFG_inst (BUFG.I) is provisionally placed by clockplacer on BUFGCTRL_X0Y0
+Resolution: Poor placement of an IO pin and a BUFG has resulted in the router using a non-dedicated path between the two.  There are several things that could trigger this DRC, each of which can cause unpredictable clock insertion delays that result in poor timing.  This DRC could be caused by any of the following: (a) a clock port was placed on a pin that is not a CCIO-pin (b)the BUFG has not been placed in the same half of the device or SLR as the CCIO-pin (c) a single ended clock has been placed on the N-Side of a differential pair CCIO-pin.
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 10ceafb30
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 2277.703 ; gain = 24.012 ; free physical = 11093 ; free virtual = 23718
+Phase 1 Placer Initialization | Checksum: 10ceafb30
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 2277.703 ; gain = 24.012 ; free physical = 11093 ; free virtual = 23718
+ERROR: [Place 30-99] Placer failed with error: 'IO Clock Placer failed'
+Please review all ERROR, CRITICAL WARNING, and WARNING messages during placement to understand the cause for failure.
+Ending Placer Task | Checksum: 10ceafb30
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 2277.703 ; gain = 24.012 ; free physical = 11095 ; free virtual = 23721
+INFO: [Common 17-83] Releasing license: Implementation
+10 Infos, 0 Warnings, 0 Critical Warnings and 3 Errors encountered.
+place_design failed
+ERROR: [Common 17-69] Command failed: Placer could not place all instances
+INFO: [Common 17-206] Exiting Vivado at Tue Oct 26 15:27:06 2021...

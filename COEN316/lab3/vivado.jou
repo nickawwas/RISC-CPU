@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:02:38 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Tue Nov  2 16:33:18 2021
+# Process ID: 5727
+# Current directory: /nfs/home/n/n_kawwas/COEN316/lab3
+# Command line: vivado
+# Log file: /nfs/home/n/n_kawwas/COEN316/lab3/vivado.log
+# Journal file: /nfs/home/n/n_kawwas/COEN316/lab3/vivado.jou
+#-----------------------------------------------------------
+start_gui
+create_project next_address_project /nfs/home/n/n_kawwas/COEN316/lab3/next_address_project -part xc7a100tcsg324-1
+set_property target_language VHDL [current_project]
+add_files -norecurse {/nfs/home/n/n_kawwas/COEN316/lab3/next_address_board.vhd /nfs/home/n/n_kawwas/COEN316/lab3/next_address.vhd}
+add_files -fileset constrs_1 -norecurse /nfs/home/n/n_kawwas/COEN316/lab3/next_address.xdc
+update_compile_order -fileset sources_1
+launch_runs synth_1 -jobs 6
+wait_on_run synth_1
+launch_runs impl_1 -jobs 6
+wait_on_run impl_1
+add_files -fileset constrs_1 -norecurse /nfs/home/n/n_kawwas/COEN316/lab3/next_address.tcl
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1

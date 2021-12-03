@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:02:38 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Wed Oct 27 20:50:40 2021
+# Process ID: 36173
+# Current directory: /nfs/home/n/n_kawwas/COEN316/lab2/VHDL/project_1/project_1.runs/synth_1
+# Command line: vivado -log regfile_board.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source regfile_board.tcl
+# Log file: /nfs/home/n/n_kawwas/COEN316/lab2/VHDL/project_1/project_1.runs/synth_1/regfile_board.vds
+# Journal file: /nfs/home/n/n_kawwas/COEN316/lab2/VHDL/project_1/project_1.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+source regfile_board.tcl -notrace

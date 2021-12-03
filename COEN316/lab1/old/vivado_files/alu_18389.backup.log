@@ -1,0 +1,42 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:02:38 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Thu Oct  7 17:12:09 2021
+# Process ID: 18389
+# Current directory: /nfs/home/n/n_kawwas/COEN316/lab1
+# Command line: vivado -log alu.log -mode batch -source alu.tcl
+# Log file: /nfs/home/n/n_kawwas/COEN316/lab1/alu.log
+# Journal file: /nfs/home/n/n_kawwas/COEN316/lab1/vivado.jou
+#-----------------------------------------------------------
+source alu.tcl
+# read_vhdl { ./alu_board.vhd}
+# read_vhdl { ./alu_comp.vhd }
+# read_xdc alu.xdc
+# synth_design -top alu -part xc7a100tcsg324-1
+Command: synth_design -top alu -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 18403 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 1400.570 ; gain = 86.805 ; free physical = 10940 ; free virtual = 23025
+---------------------------------------------------------------------------------
+ERROR: [Synth 8-1789] cannot update 'in' object x [/nfs/home/n/n_kawwas/COEN316/lab1/alu_board.vhd:35]
+ERROR: [Synth 8-1031] x_in is not declared [/nfs/home/n/n_kawwas/COEN316/lab1/alu_board.vhd:35]
+ERROR: [Synth 8-1789] cannot update 'in' object y [/nfs/home/n/n_kawwas/COEN316/lab1/alu_board.vhd:36]
+ERROR: [Synth 8-1031] y_in is not declared [/nfs/home/n/n_kawwas/COEN316/lab1/alu_board.vhd:36]
+ERROR: [Synth 8-1789] cannot update 'in' object x [/nfs/home/n/n_kawwas/COEN316/lab1/alu_board.vhd:37]
+ERROR: [Synth 8-1789] cannot update 'in' object y [/nfs/home/n/n_kawwas/COEN316/lab1/alu_board.vhd:38]
+ERROR: [Synth 8-2715] syntax error near end [/nfs/home/n/n_kawwas/COEN316/lab1/alu_board.vhd:44]
+ERROR: [Synth 8-1031] output_out is not declared [/nfs/home/n/n_kawwas/COEN316/lab1/alu_board.vhd:43]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1444.195 ; gain = 130.430 ; free physical = 10951 ; free virtual = 23037
+---------------------------------------------------------------------------------
+RTL Elaboration failed
+INFO: [Common 17-83] Releasing license: Synthesis
+2 Infos, 0 Warnings, 0 Critical Warnings and 9 Errors encountered.
+synth_design failed
+ERROR: [Common 17-69] Command failed: Synthesis failed - please see the console or run log file for details
+INFO: [Common 17-206] Exiting Vivado at Thu Oct  7 17:12:23 2021...

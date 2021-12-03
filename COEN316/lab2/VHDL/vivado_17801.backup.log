@@ -1,0 +1,28 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:02:38 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Thu Oct 14 17:21:51 2021
+# Process ID: 17801
+# Current directory: /nfs/home/n/n_kawwas/COEN316/lab2/VHDL
+# Command line: vivado
+# Log file: /nfs/home/n/n_kawwas/COEN316/lab2/VHDL/vivado.log
+# Journal file: /nfs/home/n/n_kawwas/COEN316/lab2/VHDL/vivado.jou
+#-----------------------------------------------------------
+start_gui
+create_project project_1 /nfs/home/n/n_kawwas/COEN316/lab2/VHDL/project_1 -part xc7a100tcsg324-1
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/CMC/tools/xilinx/Vivado_2018.2/Vivado/2018.2/data/ip'.
+set_property target_language VHDL [current_project]
+add_files -norecurse {/nfs/home/n/n_kawwas/COEN316/lab2/VHDL/regfile_comp.vhd /nfs/home/n/n_kawwas/COEN316/lab2/VHDL/regfile_board.vhd}
+add_files -fileset constrs_1 -norecurse /nfs/home/n/n_kawwas/COEN316/lab2/VHDL/regfile.xdc
+update_compile_order -fileset sources_1
+launch_runs synth_1 -jobs 6
+[Thu Oct 14 17:24:03 2021] Launched synth_1...
+Run output will be captured here: /nfs/home/n/n_kawwas/COEN316/lab2/VHDL/project_1/project_1.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 6
+[Thu Oct 14 17:25:15 2021] Launched impl_1...
+Run output will be captured here: /nfs/home/n/n_kawwas/COEN316/lab2/VHDL/project_1/project_1.runs/impl_1/runme.log
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Oct 14 17:28:43 2021...
