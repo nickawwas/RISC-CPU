@@ -17,6 +17,14 @@ Designed and Implemented a RISC CPU Based Upon MIPS Architecture
 - Implemented a Control Unit
     - ...
 
+## Data Cache 
+- Implemented a Data Cache
+	- ...
+
+## Instruction Cache 
+- Implemented an Instruction Cache
+	- ...
+	
 ## Data Path and Control Unit Integration + System Testing
 - Integrated the Data Path and Control Unit
 - Performed System Testing
