@@ -137,7 +137,7 @@ architecture datapath_arch of datapath is
 	-- ALU Output (Bits 0-4) is used as Address
 	d_cache : d_cache_module port map(din => reg_out_b, clk => clk, reset => reset, data_write => data_write, addr => alu_out(4 downto 0), dout => dc_out); 
 
-	-- Write Back to Regfile with ALU output (0) or D Cache dout (1)
-	d_in <= dc_out when reg_in_src = '1' else alu_out;
+	-- Write Back to Regfile with ALU output (1) or D Cache dout (0)
+	d_in <= dc_out when reg_in_src = '0' else alu_out;
 end datapath_arch;
 
